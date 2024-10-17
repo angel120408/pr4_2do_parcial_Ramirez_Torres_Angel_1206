@@ -1,0 +1,50 @@
+print(" ")#crear un espacio entre lineas 
+print("Ramirez Torres Angel Manuel")#Muestra el nombre de quen lo creo 
+print("NUMERO DE CONTOL: 1206")#Muestra su numero de control 
+print("-INSTRUCCIONES-")#Muestra las instrucciones siguientes 
+print("Crear un diccionario vacío y lo vaya llenado con información sobre una persona (por ejemplo")
+print("nombre, edad, sexo, teléfono, correo electrónico, etc.) que se le pida al usuario. Cada vez que se")
+print("añada un nuevo dato debe imprimirse el contenido del diccionario.")
+print(" ")#crear un espacio entre lineas 
+
+
+# Crear un diccionario vacío 
+persona = {}
+
+# Solicitar y añadir el nombre
+nombre = input("Introduce el nombre: ")  #introduzca su nombre
+persona['nombre'] = nombre  #nombre al diccionario
+print("Contenido del diccionario:", persona)  # Muestra el contenido
+
+print(" ")#crear un espacio entre lineas 
+
+# Solicitar y añadir la edad
+edad = input("Introduce la edad: ")  # Pide que introduzca su edad
+persona['edad'] = edad  # Añade la edad al diccionario
+print("Contenido del diccionario:", persona)  # Muestra el contenido
+
+print(" ")#crear un espacio entre lineas 
+
+# Solicitar y añadir el sexo
+sexo = input("Introduce el sexo: ")  # Pide que introduzca su sexo
+persona['sexo'] = sexo  # Añade el sexo al diccionario
+print("Contenido del diccionario:", persona)  # Muestra el contenido 
+
+print(" ")#crear un espacio entre lineas 
+
+# Solicitar y añadir el teléfono
+telefono = input("Introduce el teléfono: ")  # Pide que introduzca su teléfono
+persona['telefono'] = telefono  # Añade el teléfono al diccionario
+print("Contenido del diccionario:", persona)  # Muestra el contenido
+
+print(" ")#crear un espacio entre lineas 
+
+# Solicitar y añadir el correo electrónico
+correo = input("Introduce el correo electrónico: ")  # Pide que introduzca su correo
+persona['correo'] = correo  # Añade el correo al diccionario
+print("Contenido del diccionario:", persona)  # Muestra el contenido 
+
+print(" ")#crear un espacio entre lineas 
+
+#muestra toda la información 
+print("Información final de la persona:", persona)

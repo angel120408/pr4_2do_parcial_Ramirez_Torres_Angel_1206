@@ -63,3 +63,45 @@ print("Información final de la persona:", persona)
 - Hacer un diccionario de traducción español-inglés, se van a introducir las palabras en español e inglés separadas por dos puntos, y cada par <palabra>:<traducción> separados por comas. El programa debe crear un diccionario con las palabras y sus traducciones. Después pedirá una frase en español y utilizará el diccionario para traducirla palabra a palabra. Si una palabra no está en el diccionario debe dejarla sin traducir.
 
 
+
+print(" ")#crear un espacio entre lineas 
+print("Ramirez Torres Angel Manuel")#Muestra el nombre de quen lo creo 
+print("NUMERO DE CONTOL: 1206")#Muestra su numero de control 
+print("-INSTRUCCIONES-")#Muestra las instrucciones siguientes 
+print("Hacer un diccionario de traducción español-inglés, se van a introducir las palabras en español e inglés separadas")
+print("por dos puntos, y cada par <palabra>:<traducción> separados por comas. El programa debe crear un diccionario con")
+print("las palabras y sus traducciones. Después pedirá una frase en español y utilizará el diccionario para traducirla palabra a")
+print("palabra. Si una palabra no está en el diccionario debe dejarla sin traducir.")
+print(" ")#crear un espacio entre lineas 
+
+
+
+
+#Se crea el diccionario
+def crear_diccionario(entrada):
+    diccionario = {}
+    for par in entrada.split(','):
+        esp, eng = par.split(':')
+        diccionario[esp.strip()] = eng.strip()
+    return diccionario
+
+#Aqui se traducira una frase 
+def traducir_frase(diccionario, frase):
+    palabras = frase.split()
+    #Traduce las palabras mentras usa el diccionario 
+    traduccion = []
+    for palabra in palabras:
+        # Si la palabra está en el diccionario, la traduce si no se deja igual 
+        traduccion.append(diccionario.get(palabra, palabra))
+    return ' '.join(traduccion)
+    
+
+#pide al usuario que introuzca una frase 
+frase = input("Introduce una frase en español: ")
+traduccion = traducir_frase(diccionario, frase)  #Traduce la frase
+print("Traducción:", traduccion)  #Mostrar la traducción
+
+
+![image](https://github.com/user-attachments/assets/322a7a70-8d51-4fab-8a1a-6d77c9460514)
+![image](https://github.com/user-attachments/assets/e0fca0c9-1b8c-4029-8033-5ecbd542900c)
+![image](https://github.com/user-attachments/assets/f5545d62-e789-4a8a-a4c7-7aaf4e9d8806)
